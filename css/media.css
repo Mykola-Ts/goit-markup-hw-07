@@ -531,4 +531,12 @@
   .footer-subscribe-btn {
     margin: 0 auto;
   }
+
+  /* ----------------PORTFOLIO---------------- */
+
+  /* ----------------FILTER---------------- */
+
+  .filter {
+    max-width: 350px;
+  }
 }
