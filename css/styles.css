@@ -254,11 +254,13 @@ img {
   font-style: normal;
 }
 
-.address-link {
+.address-list {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
 
+.address-link {
   color: inherit;
 
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -562,7 +564,7 @@ img {
   left: 50%;
   transform: translateX(-50%) scaleY(1);
 
-  min-width: 298px;
+  min-width: calc(100% - 36px);
   padding-top: 72px;
   padding-right: 16px;
   padding-bottom: 24px;
@@ -700,9 +702,12 @@ img {
 
 .modal-order-policy-label {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+}
+
+.modal-order-policy-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -762,62 +767,11 @@ img {
   padding-bottom: 16px;
 }
 
-/* ----------------COMPONENTS---------------- */
-/* 
-
- */
-
-/* ----------------HEADER---------------- */
-
-/* 
-
- */
-
-/* ----------------HERO---------------- */
-
-/* 
-
- */
-
-/* ----------------ADVANTAGES---------------- */
-
-/* 
-
- */
-
-/* ----------------ACTIVITY---------------- */
-
-/* 
-
- */
-
-/* ----------------TEAM---------------- */
-
-/* 
-
- */
-
-/* ----------------CUSTOMERS---------------- */
-
-/* 
-
- */
-
-/* ----------------FOOTER---------------- */
-
-/* 
-
- */
-
 /* ----------------PORTFOLIO---------------- */
 
 .portfolio {
-  padding-top: 96px;
-}
-
-.filter {
-  display: flex;
-  gap: var(--column-gap-item-list);
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /* ----------------MAIN---------------- */
@@ -826,14 +780,15 @@ img {
 
 .filter {
   display: flex;
-  gap: var(--column-gap-item-list);
-  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: var(--column-gap-item-list);
+  row-gap: 16px;
 
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .filter-btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   border-radius: 4px;
 
   align-items: center;
@@ -869,12 +824,11 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--column-gap-item-list);
   row-gap: 48px;
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
 
 .portfolio-item-link {
@@ -890,6 +844,11 @@ img {
 .portfolio-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-img {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-descr-item {
@@ -952,9 +911,3 @@ img {
 .portfolio-item-link:is(:hover, :focus) .portfolio-overlay {
   transform: translateY(0);
 }
-
-/* ----------------MODAL-WINDOW---------------- */
-
-/* 
-
- */
