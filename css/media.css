@@ -132,6 +132,10 @@
     width: calc((100% - 24px) / 2);
   }
 
+  .advantages-item-text {
+    font-weight: 400;
+  }
+
   /* ----------------CUSTOMERS---------------- */
 
   .customers-list {
